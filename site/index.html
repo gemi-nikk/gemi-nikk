@@ -24,6 +24,15 @@
     </nav>
   </header>
   <main>
+    <section id="Thumbnails-and-Alternative-Sizes">
+      <a href="images/myself.jpg" target="_blank">
+        <picture>
+          <source media="(max-width: 500px)" srcset="images/thumbnail-150.jpg">
+          <source media="(max-width: 501px)" srcset="images/thumbnail-300.jpg">
+          <img src="images/thumbnail-300.jpg" alt="Thumbnail">
+        </picture>
+      </a>
+    </section>
     <section id="bio">
       <h1> Welcome to Kishan's Website</h1>
       <p> The stock market is a dynamic platform where buyers and sellers trade shares of publicly listed companies. It plays a crucial role in the economy by helping businesses raise capital and giving investors a chance to own a part of these businesses. Through indices like the NIFTY and the Sensex in India, investors can track market trends and make informed decisions</p>
@@ -53,8 +62,27 @@
         <cite>by <span class="author">Rolph Nelson</span></cite>
       </p>
     </section>
+    <section id="embedding-external-content">
+      <h3>Public Domain Audiobook</h3>
+      <audio controls>
+        <source src="https://www.archive.org/download/money_and_trade_considered_2111_librivox/moneyandtrade_01_law_128kb.mp3" type="audio/mpeg">
+        <a href="https://www.archive.org/download/money_and_trade_considered_2111_librivox/moneyandtrade_01_law_128kb.mp3" download>Download the audiobook</a>.
+      </audio>
+      <h3>YouTube Video</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Uw_QyeHo8f0?si=dYoTBJf9Rf58QlrH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
   </main>
   <footer>
+    <section>
+      <picture>
+        <source srcset="images/sc-logo/sc-logo.svg" type="image/svg+xml">
+        <image alt="sc-logo"
+               source="images/sc-logo/sc-logo.png"
+               srcset="images/sc-logo/sc-logo.png 1x,images/sc-logo/sc-logo@1.5x.png 1.5x,images/sc-logo/sc-logo@2x.png 2x"
+               width="70px">
+        </image>
+      </picture>
+    </section>
     <hr>
     <blockquote>
       "Tell me what you eat and I will tell you what you are."&mdash;<cite><span class="author">Anthelme Brillat-Savarin</span></cite>
