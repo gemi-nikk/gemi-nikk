@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="gemi-nikk">
+    <meta name="description" content="A personal website featuring a bio, favorite things, a haiku, and useful links.">
+    <title>kishan's CSD-112 Project</title>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+<div class="width-wrap">
+    <header id="top">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="links.html">Links</a></li>
+                <li><a href="glossary.html">Glossary</a> </li>
+                <li><a href="survey.html">Survey</a>
+            </ul>
+        </nav>
+    </header>
+    <main id="survey-form-container">
+        <div>
+            <h1>Survey</h1>
+            <p>Fields marked with a <span class="required-indicator">*</span> are required.</p>
+            <form action="https://formspree.io/f/xvgradwn" method="post">
+                <!-- Control 1 -->
+                <p>
+                    <label for="name_field">What is your name?
+                        <span class="required-indicator">*</span>
+                    </label>
+                    <input type="text" id="name_field" name="name_field" required>
+                </p>
+
+                <!-- Control 2 -->
+                <p>
+                    <label for="email_field">What is your email?
+                        <span class="required-indicator">*</span>
+                    </label>
+                    <input type="email" id="email_field" name="email_field" required>
+                </p>
+
+                <!-- Control 3 -->
+                <p>
+                    <label for="best_whole_number">Which whole number is best?
+                    </label>
+                    <input type="number" id="best_whole_number" name="best_whole_number" min="0">
+                </p>
+
+                <!-- Control 4-->
+                <p>
+                    <label for="best_day">Which day is best?
+                    </label>
+                    <input type="date" id="best_day" name="best_day">
+                </p>
+
+                <!-- Control 5-->
+                <p>
+                    <label for="best_bear">Which bear is best?
+                        <span class="required-indicator">*</span>
+                    </label>
+                    <select id="best_bear" name="best_bear" required>
+                        <option value="">&nbsp;</option> <!-- Blank option -->
+                        <option value="Black">Black</option>
+                        <option value="Brown">Brown</option>
+                        <option value="Care">Care</option>
+                        <option value="Panda">Panda</option>
+                        <option value="Polar">Polar</option>
+                        <option value="Teddy">Teddy</option>
+                    </select>
+                </p>
+
+                <!-- Control 6 -->
+                <fieldset>
+                    <legend>Do you like radio buttons?</legend>
+                    <ul>
+                        <li>
+                            <label for="radio_yes">Yes
+                            </label>
+                            <input type="radio" id="radio_yes" name="enjoys_radio_buttons" value="yes">
+                        </li>
+                        <li>
+                            <label for="radio_no">No
+                            </label>
+                            <input type="radio" id="radio_no" name="enjoys_radio_buttons" value="no">
+                        </li>
+                        <li>
+                            <label for="radio_maybe">None of your business
+                            </label>
+                            <input type="radio" id="radio_maybe" name="enjoys_radio_buttons" value="?" checked> <!-- Default checked option -->
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <!-- Control 7 -->
+                <p>
+                    <label for="life_meaning">What is the meaning of life?
+                    </label>
+                    <textarea id="life_meaning" name="life_meaning" rows="5" cols="50" placeholder="enter the correct answer">
+                </textarea>
+                </p>
+                <!-- Control 8 -->
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+    <script src="scripts/glossary.js"></script>
+    <footer>
+        <hr>
+        <blockquote>
+            "Tell me what you eat and I will tell you what you are."&mdash;<cite><span class="author">Anthelme Brillat-Savarin</span></cite>
+        </blockquote>
+        <p>&copy; 2025 <a href="mailto:24044778@saultcollege.ca?subject=Message from CSD112 Kishan's Website">Kishankumar Patel</a></p>
+    </footer>
+    <a href="#top" title="back to top"> ◤ </a>
+</div>
+</body>
+</html>
