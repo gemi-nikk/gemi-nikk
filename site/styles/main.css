@@ -1,17 +1,15 @@
-/* ---------- Section 1 & 2: Global Reset & Base Layout ---------- */
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     background-color: #f2f6fa;
     color: #222;
     font-family: sans-serif;
 }
-
 .width-wrap {
     max-width: 960px;
     margin: 0 auto 3em;
@@ -20,99 +18,74 @@ body {
     border: solid rgba(0, 0, 0, 0.3);
     border-top: none;
 }
-
-/* ---------- Section 3: Color Scheme ---------- */
 h1, h2, h3 {
     color: #003366;
 }
-
 a {
     color: #0066cc;
     text-decoration: none;
 }
-
 header nav a {
     color: #cc5500;
 }
-
 ::selection {
     background-color: #cceeff;
 }
-
-/* ---------- Section 4: Header Layout ---------- */
 header {
     border-top: 4px solid rgba(0, 0, 0, 0.1);
     margin: 0 -2em;
 }
-
 header nav {
     border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
     padding: 0 2em;
 }
-
 header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 header nav ul li {
     display: inline;
 }
-
 header nav a {
     display: inline-block;
     padding: 1em 1em 0.5em;
     border-top: 4px solid transparent;
 }
-
 header nav a:hover {
     border-top-color: #cc5500;
 }
-
-/* Footer rule with constrained width */
 footer p {
     width: clamp(300px, 50vw, 890px);
     margin: 3em auto 2em;
     border: none;
     border-bottom: 3px dotted #999;
 }
-
-/* ---------- Section 4: Glossary Term Colon ---------- */
 dt::after {
     content: ":";
 }
-
-/* ---------- Section 5: Table Styling ---------- */
 table td,
 table th {
     padding: 0.3em 1em;
 }
-
 thead th,
 tfoot td,
 tbody th {
     background-color: rgba(0, 0, 0, 0.2);
 }
-
 tbody td {
     background-color: rgba(0, 0, 0, 0.05);
 }
-
 tbody tr:nth-child(even) td {
     background-color: rgba(0, 0, 0, 0.15);
 }
-
-/* ---------- Section 6: Form Styling ---------- */
 label {
     display: block;
 }
-
 input[type="radio"] + label,
 input[type="checkbox"] + label {
     display: inline;
 }
-
 input[type="submit"] {
     border: none;
     padding: 1em 3em;
@@ -121,7 +94,6 @@ input[type="submit"] {
     font-weight: bold;
     cursor: pointer;
 }
-
 input:invalid {
     background-color: #ffe6e6;
 }
