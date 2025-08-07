@@ -11,25 +11,22 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <!-- Found me!  -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+
 </head>
 <body>
 <div class="width-wrap">
-  <header id="t   op">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="links.html">Links</a></li>
-        <li><a href="glossary.html">Glossary</a> </li>
-      </ul>
-    </nav>
+  <header id="top">
+    <script src="scripts/navigation.js"></script>
   </header>
   <main>
     <section id="Thumbnails-and-Alternative-Sizes">
-      <a href="images/myself.jpg" target="_blank">
+      <a href="images/myself.png" target="_blank">
         <picture>
-          <source media="(max-width: 500px)" srcset="images/thumbnail-150.jpg">
-          <source media="(max-width: 501px)" srcset="images/thumbnail-300.jpg">
-          <img src="images/thumbnail-300.jpg" alt="Thumbnail">
+          <source media="(max-width: 500px)" srcset="images/thumbnail_150px.png">
+          <source media="(max-width: 501px)" srcset="images/thumbnail_300px.png">
+          <img src="images/thumbnail_300px.png" alt="Thumbnail">
         </picture>
       </a>
     </section>
@@ -37,6 +34,12 @@
       <h1> Welcome to Kishan's Website</h1>
       <p> The stock market is a dynamic platform where buyers and sellers trade shares of publicly listed companies. It plays a crucial role in the economy by helping businesses raise capital and giving investors a chance to own a part of these businesses. Through indices like the NIFTY and the Sensex in India, investors can track market trends and make informed decisions</p>
       <p> I actively study market trends, company fundamentals, and macroeconomic indicators to make smart investment decisions. Diversification, risk management, and staying updated with news are essential to succeed in the stock market. Over time, compounding returns and disciplined investing can lead to significant wealth creation.</p>
+
+    <section id="making-a-table">
+      <script src="scripts/timetable.js"></script>
+    </section>
+
+    <section id="favorite-things">
       <h2> My Favorite Things</h2>
       <ul>
         <li>Music</li>
@@ -71,7 +74,7 @@
       <h3>YouTube Video</h3>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Uw_QyeHo8f0?si=dYoTBJf9Rf58QlrH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
-  </main>
+    </section>
   <footer>
     <hr>
     <blockquote>
@@ -90,6 +93,7 @@
     </section>
   </footer>
   <a href="#top" title="back to top"> ◤ </a>
+  </main>
 </div>
 </body>
 </html>
